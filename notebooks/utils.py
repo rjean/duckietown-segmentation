@@ -36,15 +36,6 @@ class DuckieVisualizer(Visualizer):
         else:
             masks = None
 
-        print("AFasa")
-        #if self._instance_mode == ColorMode.SEGMENTATION and self.metadata.get("thing_colors"):
-        #    colors = [
-        #        self._jitter([x / 255 for x in self.metadata.thing_colors[c]]) for c in classes
-        #    ]
-        #    alpha = 0.8
-        #else:
-        #    colors = None
-        #    alpha = 0.5
         colors = []
         alpha=0.8
         for c in classes:
